@@ -77,7 +77,7 @@ public class AdvertisementsController {
     
     @RequestMapping(value = "/listAdvertisements", method = RequestMethod.GET)
     public ModelAndView listadvertisement(Locale locale, HttpServletRequest req) {
-
+System.out.println("My FIrst Commint ");
           HttpSession session = req.getSession(true);
           Integer loginUserId = loginUserId(req);
 		  Tia12Users loginUserRole1 = (Tia12Users) session.getAttribute("logInUserObject");
